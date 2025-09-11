@@ -1,38 +1,159 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* Container keseluruhan */
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+/* Logo */
+.logo {
+  width: 180px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/* Tajuk utama */
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.4;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Sub-tajuk */
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Course / subject info */
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.course-select {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;       /* tukar ikut suka */
+  line-height: 1.6;      /* spacing teks */
+  padding: 8px 12px;     /* ruang dalam kotak */
+  border-radius: 8px;    /* bagi rounded */
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.course-select:hover {
+  border-color: #007bff;
+}
+
+/* Label untuk input */
+label {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  display: inline-block;
+  width: 280px; /* kasi ruang tetap untuk label */
+}
+
+/* Input box */
+input {
+  font-size: 20px;
+  padding: 6px;
+  margin-top: 4px;
+  line-height: 1.4;
+  width: 150px;
+}
+
+/* Baris form */
+.row {
+  margin-bottom: 12px;
+}
+
+/* Button */
+button {
+  margin: 8px 6px 12px 0;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3498db;
   color: white;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+button.secondary {
+  background-color: #95a5a6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.pdf {
+  background-color: #27ae60;
+}
+
+/* Result slip */
+.result {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background: #fdfdfd;
+}
+
+.result h3 {
+  font-size: 25px;
+  color: #2c3e50;
+  line-height: 1.4;
+}
+
+.result p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.mark-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.mark-table th,
+.mark-table td {
+  border: 1px solid #ddd;
+  padding: 8px 8px;
+  text-align: center;
+}
+
+.mark-table th {
+  background-color: #3498db;
+  color: white;
+  font-size: 20px;
+}
+
+.mark-table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.mark-table tr:hover {
+  background-color: #cac9c9;
+}
+
+.mark-table input {
+  font-family: "Poppins", sans-serif;width: 80px;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
 }
